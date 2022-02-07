@@ -1,0 +1,14 @@
+// source :https://css-tricks.com/snippets/sass/px-to-em-functions/ 
+@function rem($pixels, $context:16) {
+    @return($pixels / $context) * 1rem
+}
+$font-weights: (
+    "regular" : 400,
+    "medium" : 500,
+    "semibold" : 600
+    );
+
+$DarkGray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$VeryDarkGray: hsl(0, 0%, 27%) ;

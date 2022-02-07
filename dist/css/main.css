@@ -1,0 +1,229 @@
+main {
+  max-width: 87.5rem;
+  min-width: 80.3125rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 1285px) {
+  main {
+    max-width: 23.4375rem;
+    min-width: 23.4375rem;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .column-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .column-1 .menu-item {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .menu-item {
+    display: block;
+  }
+}
+
+main .column-1 .title {
+  color: white;
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .title {
+    top: 0.625rem;
+    left: 8.125rem;
+  }
+}
+
+main .column-1 .navbar {
+  color: white;
+  position: absolute;
+  top: 2.1875rem;
+  left: 8.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+main .column-1 .navbar .close-btn {
+  display: none;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .navbar .close-btn {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+main .column-1 .navbar li {
+  margin: 0 0.625rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.75rem;
+    display: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+    color: black;
+    font-weight: 600;
+  }
+}
+
+main .column-1 .slideshow-picture__main {
+  max-width: 100%;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .slideshow-picture__main {
+    width: 23.4375rem;
+  }
+}
+
+main .column-1 .slideshow-description {
+  padding: 3.125rem;
+  position: relative;
+}
+
+main .column-1 .slideshow-description h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+main .column-1 .slideshow-description p {
+  margin: 1.875rem 0;
+  line-height: 1.25rem;
+  color: #a1a1a1;
+}
+
+main .column-1 .slideshow-description h3 {
+  color: #a1a1a1;
+  cursor: pointer;
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+}
+
+main .column-1 .arrows {
+  width: 7.5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1285px) {
+  main .column-1 .arrows {
+    top: -5rem;
+    left: 15.9375rem;
+  }
+}
+
+main .column-1 .arrows img {
+  width: 1.875rem;
+  height: 3.125rem;
+  cursor: pointer;
+}
+
+main .column-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1285px) {
+  main .column-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .column-2 .about {
+  padding: 2.5rem;
+}
+
+main .column-2 .about h3 {
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1285px) {
+  main .column-2 .about h3 {
+    letter-spacing: 0.125rem;
+  }
+}
+
+main .column-2 .about p {
+  margin: 1.25rem 0;
+  line-height: 1.25rem;
+  color: #a1a1a1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Spartan', sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

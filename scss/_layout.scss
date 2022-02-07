@@ -1,0 +1,160 @@
+@import 'functions';
+@import 'breakpoints';
+main {
+    max-width: rem(1400);
+    min-width: rem(1285);
+    height: max-content;
+    margin: 0 auto;
+
+    @include breakpoint(large) {
+        max-width: rem(375);
+        min-width: rem(375);
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .column-1 {
+        display: flex;
+        position: relative;
+        @include breakpoint(large) {
+            flex-direction: column;
+        }
+
+        .menu-item {
+            position: absolute;
+            top: rem(20);
+            left: rem(20);
+            display: none;
+            cursor: pointer;
+
+            @include breakpoint(large) {
+                display: block;
+            }
+        }
+        .title {
+            color:$White;
+            position: absolute;
+            top: rem(20);
+            left: rem(20);
+            cursor: pointer;
+
+            @include breakpoint(large) {
+                top:rem(10);
+                left:rem(130)
+            }
+        }
+        .navbar {
+            color:$White;
+            position: absolute;
+            top: rem(35);
+            left: rem(140);
+            display:flex;
+            list-style: none;
+             .close-btn {
+                 display: none; 
+                 @include breakpoint(large) {
+                     display: block;
+                     cursor: pointer;
+                 }
+             }
+             li {
+                margin: 0 rem(10);
+                cursor: pointer;
+             }
+
+             @include breakpoint(large) {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: rem(60);
+                display: none;
+                justify-content: space-evenly;
+                align-items: center;
+                background: $White;
+                color:$Black;
+                font-weight: map-get($font-weights,semibold );
+             }
+        }
+        .slideshow-picture__main {
+            max-width: 100%;//do not expand more than its width
+
+            @include breakpoint(large){
+                width: rem(375);
+            }
+        }
+        .slideshow-description {
+            padding: rem(50);
+            position: relative;
+
+            h1 {
+                font-size: rem(30);
+                font-weight: map-get($font-weights,semibold );
+            }
+            p {
+                margin: rem(30) 0;
+                line-height: rem(20);
+                color:$DarkGray;
+            }
+
+            h3 {
+                color:$DarkGray;
+                cursor: pointer;
+                letter-spacing: rem(4);
+                font-weight: map-get($font-weights,regular );
+                
+            
+            }
+        }
+
+        .arrows {
+            width: rem(120);
+            height: rem(80);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            @include breakpoint(large) {
+                top:rem(-80);
+                left:rem(255);
+            }
+            img{ 
+                width: rem(30);
+                height: rem(50);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .column-2 {
+        display: flex;
+
+        @include breakpoint(large) {
+            flex-direction: column;
+        }
+        .about {
+            padding: rem(40);
+
+            h3 {
+                letter-spacing: rem(4);
+                font-weight: map-get($font-weights, semibold );
+                @include breakpoint(large) {
+                    letter-spacing: rem(2);
+                }
+            }  
+            p {
+                margin: rem(20) 0;
+                line-height: rem(20);
+                color:$DarkGray;
+            }
+ 
+        }
+    }
+}
+
+

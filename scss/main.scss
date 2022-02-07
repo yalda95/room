@@ -1,0 +1,12 @@
+@import 'layout';
+@import 'breakpoints';
+@import 'functions';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-weight: map-get($font-weights, regular );
+    font-family: 'Spartan', sans-serif;
+}
